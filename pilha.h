@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 #define MAX 10
 
 typedef int node;
-
 typedef struct pilha {
 
     int topo;
