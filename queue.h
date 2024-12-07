@@ -1,6 +1,7 @@
+#ifndef QUEUE
+#define QUEUE
 #include <stdio.h>
 #define MAX 10
-
 typedef int node;
 
 typedef struct{
@@ -32,7 +33,6 @@ int full (queue *aux){
 
 }
 int push(queue *aux, int element){
-
     if(!full(aux)){
         aux->item[aux->end] = element;
         aux->end++;
@@ -56,7 +56,6 @@ int pop(queue *aux) {
 }
 
 void show(queue aux){
-
     while(aux.total > 0){
         printf("%d ", aux.item[aux.start]);
         aux.start++;
@@ -66,4 +65,6 @@ void show(queue aux){
         aux.total--;
     }
 }
+
+#endif
 
